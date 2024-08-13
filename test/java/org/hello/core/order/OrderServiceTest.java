@@ -30,4 +30,12 @@ public class OrderServiceTest {
         Order order = orderService.createOrder(memberId, "itemA", 10000);
         Assertions.assertThat(order.getDiscountPrice()).isEqualTo(1000);
     }
+
+//    @Test
+//    void fieldinjectionTest(){
+//        OrderServiceImpl orderService = new OrderServiceImpl();
+//
+//        // Setter를 따로 지정
+//        orderService.createOrder(1L, "itemA", 10000);
+//    }
 }
